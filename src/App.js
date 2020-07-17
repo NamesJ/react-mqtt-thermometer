@@ -39,8 +39,8 @@ class App extends React.Component {
     this.client = null
 
     this.state = {
-      broker_url: 'mqtt://raspi3.local:9001',
-      topic: '/topic/temperature',
+      broker_url: 'mqtt://192.168.1.102:9001',
+      topic: '/temperature-01',
       temperature: 0,
     }
   }
