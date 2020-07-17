@@ -1,9 +1,45 @@
 .App {
+  background-color: #282c34;
   text-align: center;
 }
 
+.App-form-container {
+  position: fixed;
+  bottom: 0;
+}
+
+.App-form {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+label, input, button {
+    font-size: inherit;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 0.1em 0.2em;
+    /* the following ensures use of the same box-model for rendering */
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    flex-grow: 12;
+}
+
+.App-broker-url {
+}
+
+.App-mqtt-topic {
+}
+
+.App-submit {
+  flex-grow: 3;
+}
+
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
